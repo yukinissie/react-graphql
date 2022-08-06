@@ -13,8 +13,8 @@ const GET_USERS = gql`
 function App() {
   const { data, loading, error } = useQuery(GET_USERS);
 
-  if (loading) return '<p>ローディング中です</p>';
-  if (error) return '<p>エラーが発生しています。<p>';
+  if (loading) return <p>ローディング中です</p>;
+  if (error) return <p>エラーが発生しています。</p>;
 
   return (
     <div style={{ margin: '3em' }}>
